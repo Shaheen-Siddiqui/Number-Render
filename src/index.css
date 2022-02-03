@@ -1,0 +1,50 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ body{
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+  background-color: aqua;
+} 
+
+.inputFild{
+  height: 100px;
+  width: 450px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.btn{
+width: 454px;
+margin-top: 10px;
+height: 30px;
+font-size: large;
+font-family: cursive;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
