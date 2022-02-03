@@ -6,12 +6,11 @@
   box-sizing: border-box;
 }
  body{
-  
+  background-color: lavender;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30rem;
-  background-color: aqua;
+  height: 40rem;
 } 
 
 .inputFild{
@@ -33,7 +32,15 @@ font-size: large;
 font-family: cursive;
 }
 
-
+.outer{
+  /* border: 2px solid black; */
+  
+}
+li{
+  color: darkred;
+  font-size: 25px;
+  padding: 5px;
+}
 
 
 
