@@ -4,10 +4,11 @@ function App() {
   let [Inpval, setInpval] = useState();
   let [btn,setBtn] = useState(false)
 
-  const inputFac = ((event) => {
-    const value = event.target.value;
-    
+const inputFac = ((event) => {
+const value = event.target.value;
+ 
   })
+     
 const clicking=()=>{
   setBtn(true)
 }
@@ -19,13 +20,13 @@ const dblclick=()=>{
   return (
     <>
 
-      <input className='inputFild' autoFocus placeholder='Enter Your Email..' onChange={inputFac}/><br />
+      <input className='inputFild' autoFocus placeholder='Enter Your Email..' onDoubleClick={dblclick}/><br />
       <button className='btn' onClick={clicking}  >click for Result</button>
       <br/>
       <br/>
       <br/>
 
-   {btn? <div className="outer" DoubleClick={dblclick}>
+   {btn? <div className="outer">
       <ol>
         <li>1234567789 aadil ki ammi</li>
         <li>1234567789 aadil ki abbu</li>
