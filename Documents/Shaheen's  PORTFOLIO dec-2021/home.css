@@ -1,0 +1,166 @@
+
+:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 150px;
+    width: auto;
+    display: flex;
+    background-color: black;
+    margin: auto;
+    padding-left: 30px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 40px;
+    }
+
+.linkk{
+    text-decoration: none;}
+
+.linkk{
+    position: relative;
+    color: #fff;
+    padding: 35px;
+    font-size: 27px;
+    letter-spacing: 0.5px; 
+}
+
+.linkk::after{
+    content:"";
+    position: absolute;
+    top: 63px;
+    background-color: deeppink;
+    height: 5px;
+    width: 80px;
+    right: 30px;
+    transition: 0.3s;
+}
+.linkk:hover::after{
+    width: 120px;
+}
+.ghr{
+    height: 130px;
+    width: 130px;
+    padding-left: 41rem;
+    position: relative;
+    top: 8px;
+}
+.f1{
+    position: relative;
+    top: 10px;
+    left: 300px;
+}
+.f2{
+    padding-left:320px;
+    font-size: 30px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.f3{
+    height: 150px;
+    width: 1170px;
+    background-color: bisque;
+    position: relative;
+    left: 4rem;
+    font-size: 24px;
+    text-align: center;
+}
+.item1{
+    height: 200px;
+    width: 600px;
+    background-color: darkslateblue;
+    position: relative;
+    left: 10rem;
+    border-radius: 40px;
+    margin: 10px;
+    text-align: center;
+}
+.item1:hover{background-color: darkcyan; }
+
+.item2{
+
+    height: 200px;
+    width: 600px;
+    background-color: darkcyan;
+    position: relative;
+    left: 30rem;
+    border-radius: 40px;
+    margin: 10px;}
+
+.item2:hover{
+    background-color: darkslateblue;
+}
+.pp1{
+    font-size: 23px;
+    padding-top: 25px;
+    font-family: cursive;
+    color: white;
+    
+}
+.btn {
+    text-decoration: none;
+    width: 95px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: bold;
+}
+.pp2{
+    font-size: 23px;
+    padding-top: 25px;
+    font-family: cursive;
+    color: white;
+    text-align: center;
+    padding-top: 27px;
+
+}
+.btn2{
+    text-decoration: none;
+    width: 95px;
+    height: 45px;
+    font-size: 17px;
+    font-weight: bold;
+    position: relative;
+    left: 250px;
+
+}
+.butt:hover{
+ background-color: aquamarine;
+ transition: 0.5s;
+}
+
+footer{
+    height: 230px;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    background-color: black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: 20px;
+}
+
+.AA{
+    color: whitesmoke;
+    font-size: 35px;
+}
+.fa{
+    color: white;
+}
+.p1{
+    font-size: 37px;
+    padding-top: 20px;
+    color: whitesmoke;
+    font-weight:bold;
+}
+.a{
+    padding: 20px;
+
+    height: 100px;
+    width: 100px;
+}

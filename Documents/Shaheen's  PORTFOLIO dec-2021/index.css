@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Luxurious+Script&family=Quicksand:wght@700&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.item{
+    height: 310px;
+    width: 110rem;
+    margin: 20px;
+    margin-bottom: 12px;}
+
+h1{
+    height: 140px;
+    width: 79.8rem;
+    background-color: beige;
+    border-radius: 0px 0px 30px 30px;
+    border: 1px groove beige;
+    font-family: 'Luxurious Script', cursive;
+    font-family: 'Pushster', cursive;
+    font-family: 'Quicksand', sans-serif;}  
+
+.img1{
+    height: 330px;
+    width: 585px;
+    border-radius: 40px;
+    margin: 20px;
+    border: 5px groove wheat;
+    backdrop-filter: hue-rotate(120deg);
+
+}
+.bdy{background-image:  url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+background-color:  #DFDBE5;
+}  
+.top{
+    padding-top: 30px;
+    font-size: 45px;
+    padding-left: 500px;
+}
+.topy{   color: blueviolet;
+    padding-left: 20px;
+}
+footer{
+    height: 200px;
+    width: 79.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.fa{
+color: white;
+}
+
+.p1{
+    font-size: 37px;
+    padding-top: 20px;
+    color: whitesmoke;
+    font-weight:bold;
+}
+.a{
+    padding: 20px;
+
+    height: 100px;
+    width: 100px;
+}
+.AA{
+    color: whitesmoke;
+    font-size: 35px;
+
+}
+.btn1{
+    height: 60px;
+    width: 180px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-family: cursive;
+    color: blueviolet;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+background-image: linear-gradient(white,grey);
+
+}
+.btn1:hover{
+ box-shadow: 0 5px 20px rgba(0, 0, 0, .5);
+}
+.work1{
+    position: relative;
+    bottom: 21rem;
+    left: 3rem;
+}
+
+.work2{
+position: relative;
+left: 15rem;
+bottom: 8rem;
+box-shadow: 0 5px 15px rgba(0, 0, 09, .10);
+background-image: linear-gradient(white,grey);
+}
+.work3{
+
+    position: relative;
+    left: 15rem;
+    bottom: 8rem;
+    background-image: linear-gradient(white,black);    
+    color: white;
+}

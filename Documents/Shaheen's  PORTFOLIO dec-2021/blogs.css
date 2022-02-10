@@ -1,0 +1,127 @@
+
+:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    height: 150px;
+    width: auto;
+    display: flex;
+    background-color: black;
+    margin: auto;
+    padding-left: 30px;
+    border-radius: 10px 10px 10px 10px;
+    }
+
+.linkk{
+    text-decoration: none;
+
+    position: relative;
+    color: #fff;
+    padding: 35px;
+    font-size: 27px;
+    letter-spacing: 0.5px; 
+}
+.linkk::after{
+        content:"";
+        position: absolute;
+        top: 63px;
+        background-color: deeppink;
+        height: 5px;
+        width: 80px;
+        right: 30px;
+        transition: 0.3s;
+    }
+
+    .linkk:hover::after{
+        width: 100px;
+    }
+    
+.phr{
+    height: 130px;
+    width: 130px;
+    padding-left: 41rem;
+    position: relative;
+    top: 8px;
+    border-radius: 30px;
+}
+.p1{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: serif;
+    font-size: 35px;
+    color: black;
+}
+.img1{
+    height: 400px;
+    width: 1000px;
+    padding-left: 10rem;}
+
+.box1{height: 290px;
+width: 1250px;
+background-color: antiquewhite;
+border-radius: 40px 40px 0px 40px;
+text-align: center;
+position: relative;
+left: 0.5rem;
+
+}
+.pp5{
+    padding-top: 2rem;
+    font-size: 32px;
+    font-style: italic;
+    font-size: bolder;
+    color: blue;}
+
+.p4{
+    font-size: 20px;
+}
+.btn1{
+height: 51px;
+width: 190px;
+background-color: beige;
+font-size: 21px;
+font-family: serif;
+border-radius: 40px;
+text-decoration: none;
+}
+
+.btn1:hover{
+background-color: lightgrey;
+
+}
+
+footer{
+    height: 230px;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;}
+
+.ppp{
+    font-size: 37px;
+    padding-top: 20px;
+    color: whitesmoke;
+    font-weight:bold;
+}
+.a{
+    padding: 20px;
+
+    height: 100px;
+    width: 100px;
+}
+.fa{
+    color: white;
+}
+
+.AA{
+    font-size: 37px;
+    padding-top: 20px;
+    color: whitesmoke;
+    font-weight:bold;
+}
