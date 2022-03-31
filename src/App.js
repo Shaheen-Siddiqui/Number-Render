@@ -1,47 +1,74 @@
 import React, { useState } from 'react';
+import AddNumber from './AddNumber'
 
 function App() {
   let [Inpval, setInpval] = useState();
-  let [btn,setBtn] = useState(false)
+  let [btn, setBtn] = useState(false)
+  let [svalue, setValue] = useState()
+  let [Enter, setEnter] = useState([])
 
-const inputFac = ((event) => {
-const value = event.target.value;
- 
+  const clicking = () => {
+    if (Inpval == '123456789') {
+      setBtn(true)
+    }
+
+    else if (svalue.length) {
+        setEnter((prev) => {
+        return [...prev, svalue]
+      })
+    }
+    setValue("")
+  }
+  // //
+  const dblclick = () => {
+    setBtn(false)
+  }
+  // //
+  const updateInput = ((event) => {
+    const value = event.target.value
+    setInpval(value)
+    setValue(value)
   })
-     
-const clicking=()=>{
-  setBtn(true)
-}
-const dblclick=()=>{
-  setBtn(false)
-}
+  // //
 
-
+  const Deleted = (id) => {
+    return setEnter((prev) => {
+      return prev.filter((val, indx) => {
+        return indx !== id
+      })
+    })
+  }
   return (
     <>
+      <input value={svalue} className='inputFild' autoFocus placeholder='Enter Your Passward..' onDoubleClick={dblclick} onChange={updateInput} />
+      <button className='btn' onClick={clicking}>LOGIN</button>
+      <br />
+      <br />
+      <br />
 
-      <input className='inputFild' autoFocus placeholder='Enter Your Email..' onDoubleClick={dblclick}/><br />
-      <button className='btn' onClick={clicking}  >click for Result</button>
-      <br/>
-      <br/>
-      <br/>
+      {btn ? <div className="outer">
+        <ul>
+          <li><span>Aayat </span>         <br />9773758285 </li>
+          <li><span>Jasmen</span>         <br />7840809421 </li>
+          <li><span>Ayesha</span>         <br />2378564099</li>
+          <li><span>Mannat</span>         <br />4599098700</li>
+          <li><span>Humaena-khan</span>   <br />1212906790</li>
 
-   {btn? <div className="outer">
-      <ol>
-        <li>1234567789 aadil ki ammi</li>
-        <li>1234567789 aadil ki abbu</li>
-        <li>1234567789 aadil ki khala</li>
-        <li>1234567789 aadil ki fufi</li>
-        <li>1234567789 aadil ki bahan</li>
-        <li>1234567789 aadil ki bhaijaan</li>
-        <li>1234567789 aadil ki bahan</li>
+        </ul>
+      </div> : null}
 
-      </ol>
-    </div> :null}
+      {Enter.map((val, index) => {
+        return <AddNumber
+          key={index}
+          id={index}
+          text={val}
+          khatam={Deleted}
+
+        />
+      })}
 
     </>
   );
 }
 
 export default App;
-
